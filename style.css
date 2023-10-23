@@ -39,8 +39,8 @@ body {
     border-top-right-radius: 90px;
 }
 
-#spooky #body::before,
-#spooky #body::after{
+#spooky #body:before,
+#spooky #body:after{
     content: '';
     position: absolute;
     top: 130px ;
@@ -52,11 +52,11 @@ body {
     animation: floaty .2s infinite;
 }
 /* Ghost hands */
-#spooky #body::before {
+#spooky #body:before {
     left: -18px;
 }
 
-#spooky #body::after{
+#spooky #body:after{
     right: -18px;
 }
 /* Ghost hands */
@@ -71,8 +71,8 @@ body {
     height: 20px;
 }
 
-#spooky #body #eyes::before,
-#spooky #body #eyes::after {
+#spooky #body #eyes:before,
+#spooky #body #eyes:after {
     content: '';
     display: block;
     width: 30px;
@@ -81,3 +81,74 @@ body {
     border-radius: 50%; 
 }
 /* Ghost eyes */
+
+/* Ghost mouth */
+#spooky #body #mouth {
+    background: #252c49;
+    margin: 25px auto 0;
+    width: 60px;
+    height: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+
+#spooky #body #mouth::before {
+    content: '';
+    display: block;
+    background: #fff;
+    margin-left: 20px;
+    width: 10px;
+    height: 10px;
+}
+/* Ghost mouth */
+
+
+/* Ghost feet */
+#spooky #body #feet {
+    position: absolute;
+    display: flex;
+    bottom: -18px;
+    width: 180px;
+    height: 36px;
+}
+
+#spooky #body #feet > *,
+#spooky #body #feet::before,
+#spooky #body #feet::after {
+    content: ' ';
+    width: 36px;
+    height: 36px;
+    background: #f2fbf1;
+    border-radius: 50%;
+}
+/* Ghost feet */
+
+#shadow {
+    margin: -90px auto 0;
+    background: #252c49;
+    width: 180px;
+    height: 40px;
+    border-radius: 50%;
+    animation: zoomy 2s infinite;
+}
+
+@keyframes floaty {
+    0%, 100% {
+        transform:  translateY(0);
+    }
+    
+    50%{
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes zoomy {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(0.8);
+    }
+}
