@@ -26,7 +26,7 @@ body {
     margin: 10% auto;
     width: 80%;
     height: 80%;
-    animation: floaty 2s infinite;
+    animation: floaty .5s infinite;
 }
 
 #spooky #body {
@@ -34,7 +34,7 @@ body {
     margin: 50px auto 0;
     width: 180px;
     height: 220px;
-    background: #f2fbf1;
+    background: purple;
     border-top-left-radius: 90px;
     border-top-right-radius: 90px;
 }
@@ -48,8 +48,8 @@ body {
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    background: #f2fbf1;
-    animation: floaty .2s infinite;
+    background: orange;
+    animation: floaty .5s infinite;
 }
 /* Ghost hands */
 #spooky #body:before {
@@ -77,7 +77,7 @@ body {
     display: block;
     width: 30px;
     height: 30px;
-    background: #252c49;
+    background: orange;
     border-radius: 50%; 
 }
 /* Ghost eyes */
@@ -96,7 +96,7 @@ body {
 #spooky #body #mouth::before {
     content: '';
     display: block;
-    background: #fff;
+    background: orange  ;
     margin-left: 20px;
     width: 10px;
     height: 10px;
@@ -119,18 +119,18 @@ body {
     content: ' ';
     width: 36px;
     height: 36px;
-    background: #f2fbf1;
+    background: purple;
     border-radius: 50%;
 }
 /* Ghost feet */
 
 #shadow {
     margin: -90px auto 0;
-    background: #252c49;
+    background: red;
     width: 180px;
     height: 40px;
     border-radius: 50%;
-    animation: zoomy 2s infinite;
+    animation: zoomy .5s infinite;
 }
 
 @keyframes floaty {
@@ -145,10 +145,16 @@ body {
 
 @keyframes zoomy {
     0%, 100% {
-        transform: scale(1);
+        transform: scale(3);
     }
 
     50%{
         transform: scale(0.8);
     }
 }
+
+
+
+
+
+
