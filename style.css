@@ -7,6 +7,7 @@ body {
     align-items: center;
     margin: 0;
     background: #424f6f;
+    
 }
 
 #container {
@@ -15,7 +16,39 @@ body {
      padding: 0;
      box-sizing: border-box;
      background: #424f6f;
+     animation-name: move;
+     animation-duration: 5s;
+     animation-iteration-count: infinite;
+   
 }
+    @keyframes move{
+        0% {
+            transform:translateX(500px);
+           
+        }
+    
+        50%{
+            transform:translateX(-500px);
+            
+        }
+    
+        100% {
+            transform:translateX(500px);
+         
+        }
+
+
+
+    
+}
+
+
+
+
+
+
+
+
 
 *:after,
 *:before {
@@ -37,6 +70,12 @@ body {
     background: purple;
     border-top-left-radius: 90px;
     border-top-right-radius: 90px;
+    animation-name: move;
+}
+
+#spooky #body:hover{
+    background: #424f6f;
+    transition: ease-in-out 1s;
 }
 
 #spooky #body:before,
@@ -51,6 +90,9 @@ body {
     background: orange;
     animation: floaty .5s infinite;
 }
+
+
+
 /* Ghost hands */
 #spooky #body:before {
     left: -18px;
@@ -131,7 +173,12 @@ body {
     height: 40px;
     border-radius: 50%;
     animation: zoomy .5s infinite;
+ 
 }
+
+
+
+
 
 @keyframes floaty {
     0%, 100% {
@@ -153,6 +200,13 @@ body {
     }
 }
 
+
+
+.h1{
+  margin-bottom: 500px;
+  margin-right: 500px;
+  font-family: creepster;
+}
 
 
 
