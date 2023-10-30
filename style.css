@@ -71,6 +71,7 @@ body {
     border-top-left-radius: 90px;
     border-top-right-radius: 90px;
     animation-name: move;
+    transition: ease-in-out 2s;
 }
 
 #spooky #body:hover{
